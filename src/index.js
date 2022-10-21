@@ -39,6 +39,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+//IMAGES
 const logoImg = document.querySelector('#logo-img');
 logoImg.src = siteContent.images['logo-img'];
 
@@ -47,4 +48,10 @@ ctaImg.src = siteContent.images['cta-img'];
 
 const middleImg = document.querySelector('#middle-img');
 middleImg.src = siteContent.images['accent-img'];
+
+//FOOTER LINK
+
+const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer.copyright;
+footerLink.classList.add('bold');
 
