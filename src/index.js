@@ -93,3 +93,14 @@ ctaHeader.textContent = siteContent.cta.h1;
 const ctaButton = document.querySelector('.cta button');
 ctaButton.textContent = siteContent.cta.button;
 
+//NAV LINKS
+
+const navLinks = document.querySelectorAll('header nav a')
+const navLinkText = Object.values(siteContent.nav);
+
+navLinks.forEach((link, index)  => {
+  link.textContent = navLinkText[index];
+  link.classList.add('italic');
+});
+
+
